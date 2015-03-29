@@ -1,0 +1,39 @@
+{
+  "name": "react-zones",
+  "version": "0.1.0",
+  "description": "reactjs with automatic rerendering",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.13.0",
+    "react-tools": "^0.13.0",
+    "throttle-debounce": "^0.1.1",
+    "zones.js": "^4.6.0"
+  },
+  "devDependencies": {
+    "babel": "^4.7.16"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/frankwallis/react-zones.git"
+  },
+  "author": "Frank Wallis",
+  "license": "MIT",
+  "jest": {
+    "collectCoverage": true,
+    "testPathIgnorePatterns": [
+      "/__tests__/[^/]*/.+"
+    ],
+    "testPathDirs": [
+      "src"
+    ],
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-tools"
+    ]
+  }
+}
