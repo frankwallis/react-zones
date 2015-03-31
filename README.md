@@ -3,10 +3,10 @@
 use angular 2 zones to automatically re-render your reactjs app
 
 ### Usage
-
+```
 var rezone = require('react-zones');
 rezone.bootstrap(<App/>, document.body);
-
+```
 You will also need to include zones.js at the top of your index.html:
 
 ```
